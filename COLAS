@@ -1,0 +1,26 @@
+#Ejemplo de Colas - FIFO
+Pila=[]
+Cola=[]
+
+#Ejemplos de Pilas - LIFO
+Pila=[]
+#incluir elementos - push - apilar
+Pila.append("Lunes")
+Pila.append("Martes")
+Pila.append("Miercoles")
+Pila.append("Jueves")
+Pila.append("Viernes")
+Pila.append("Sabado")
+Pila.append("Domingo")
+print(Pila)
+a=len(Pila)
+while a>1:
+    print()
+    x=Pila.pop()
+    print("Pila: ")
+    print(Pila)
+    print()
+    Cola.append(x)
+    print("Cola: ")
+    print(Cola)
+    a=a-1
