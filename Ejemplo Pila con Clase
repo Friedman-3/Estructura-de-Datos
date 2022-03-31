@@ -1,0 +1,28 @@
+class Stack:
+    def __init__(self):
+        self.items = []
+        
+    def isEmpty(self):
+        return self.items == []
+    
+    def push(self, item):
+        self.items.append(item)
+        
+    def pop(self):
+        return self.items.pop()
+        
+    def top(self):
+        return self.items.pop()
+    
+    def size(self):
+        return len(self.items)
+        
+s = Stack() # Creando un objeto de la clase Stack
+num = int(input("Ingrese el numero de elementos que desee ingresar"))
+for i in range(num):
+    print(s.isEmpty)
+print (s.isEmpty()) # True o False
+s.push(100) # Adiciona un valor
+s.push(200)
+s.pop() # Saca un valor 200
+s.size() #1
