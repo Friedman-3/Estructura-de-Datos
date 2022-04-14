@@ -1,0 +1,23 @@
+class Pares:
+    def __init__ (self,filas,columnas):
+        self.matriz=[]
+        self.filas=filas
+        self.columnas=columnas
+    def mostrarPares(self):
+        for i in range(self.filas):
+            print(self.matriz[i])
+        print("___________")
+    def getPares(self):
+        return self.matriz
+    def getFilas(self):
+        return self.filas
+    def getColumnas(self):
+        return self.columnas
+    def generaPares(x):
+        y=0
+        lista=[]
+        while y<x:
+             lista.append(y*2)
+             y+=1
+        return lista
+    print(generaPares(20))
