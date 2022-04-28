@@ -1,0 +1,13 @@
+import os
+print("\nCrear un archivo")
+print("============")
+
+NOMBRE_ARCHIVO='datos.txt'
+archivo=open(NOMBRE_ARCHIVO, 'w')
+archivo.write('''Juanito Pedraza \n
+Juanito.69 \n
+*********** \n
+olamundo@gmail.com \n
+78613285 \n
+11257924 \n''')
+archivo.close()
