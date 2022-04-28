@@ -1,0 +1,16 @@
+import os
+
+print ("\nCrear un archivo")
+print ("================")
+
+NOMBRE_ARCHIVO = 'datos.txt'
+
+archivo = open(NOMBRE_ARCHIVO, 'w') # abre el archivo datos.txt
+archivo.write('Bajo el cielo más puro de América\n Y en la tierra de Ñuflo de Chávez\n Libertad van trinando las aves\n De sureste ostentando el primor\n')
+archivo.close()
+
+if NOMBRE_ARCHIVO in os.listdir("."):
+    print ("\nArchivo creado en la ruta: \n\n\t{0}/{1}".format(
+        os.getcwd(), NOMBRE_ARCHIVO))
+else:
+    print ("El archivo no fue creado!!!\n")
